@@ -1,0 +1,353 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 27/02/2021, 23:17:10
+    Author     : Maria
+*/
+
+h1 {
+    text-align: center;
+    font-size: 24pt;
+    width: 100%;
+    padding-top: 20px;
+}
+
+h2, h3 {
+    text-align: center;
+    font-size: 18pt;
+    width: 100%;
+}
+
+div#interface {
+    font-family: Arial, sans-serif;
+    width: auto;
+    height: auto;
+    background-color: white;
+    margin: -20px auto 0px auto;
+    box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+    padding: 10px 10px 10px 10px;
+}
+
+section#corpo {
+    clear: both;
+}
+header#cabecalho {
+    border: 3px green solid;
+    height: 100px;
+    background-color: white;
+    margin: 5px;
+    padding: 5px;
+    padding-top: 30px;
+    /*padding-bottom: -20px;*/
+    text-align: center;
+    font-size: 36pt;
+    font-weight: bold;
+    color: green;
+    vertical-align: middle;
+}
+    imagem#cabecalho {
+    position: absolute;
+    left: 5px;
+    top: 5px;
+}
+aside#lateral {
+    display: block;
+    width: 350px;
+    float: right;
+    padding-bottom: -20px;
+    /*padding: 2px;
+    margin-top: 2px;*/
+}
+
+p#titulo {
+    font-size: 30pt;
+    font-weight: bold;
+    color: green;
+    
+    margin: 5px;
+    padding: 2px;
+    padding-top: 30px;
+    text-align: center;
+    width: 100%;
+    padding-left: 50px;
+}
+figure.cardapio {
+    position: relative;
+    border: 8px solid white;
+    box-shadow: 1px 1px 4px black;
+    top: 0px;
+}
+
+figure.cardapio img {
+    width: 100%;
+    height: auto;
+}
+
+figure.cardapio figcaption {
+    position: absolute;
+    top: 10px;
+    color: green;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    /*transition: opacity 1s;*/
+}
+
+figure.cardapio:hover figcaption {
+    opacity: 1;
+}
+
+input#home { 
+    background-color: green;
+    color: white;
+    font-size: 12pt;
+    margin-bottom: 4px;
+    margin-top: 10px;
+    float: right;
+}
+
+input#home:focus {
+    background-color: white;
+    color: black;
+}
+
+
+/*
+img#cardapio {
+    position: relative;
+    height: 1000px;
+    top: 50%;
+    left: 35%;
+}
+*/
+a {
+    color: black;
+    text-decoration: none;
+    color: white;
+    background-color: green;
+    vertical-align: middle;
+    margin-left: 20px;
+    margin-right: 18px;
+}
+
+nav#menu {
+    width: auto;
+    position: relative;
+    padding-right: 5px;
+    padding-left: 5px;
+    margin-top: 0px;
+    /*
+    padding-bottom: 5px;
+    width: 100%;
+    */
+}
+
+label.error{
+    color: black;
+}
+
+table.cadastro { /*configuração da tabela*/
+    width: auto;
+    height: auto;
+    border: 5px solid white;
+    font-size: 11pt;
+    border-spacing: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table.cadastro label {
+    font-weight: bold;
+    margin-bottom: 4px;
+    margin-top: 4px;
+}
+
+table.cadastro input[type=text],[type=password] { /*configuração dos campos entrada de dados da tabela*/
+    background-color: green;
+    color: white;
+    margin-bottom: 4px;
+    margin-top: 4px;
+}
+
+table.cadastro input[type=text]:focus {
+    background-color: white;
+    color: black;
+}
+
+table.consulta {
+    width: 100%;
+    height: auto;
+    border: 5px solid black;
+    font-size: 12pt;
+    border-spacing: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+tbody.consulta {
+    height: auto;
+    border: 5px solid black;
+    border-spacing: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 12pt;
+}
+
+td#total {
+    margin-top: 10px;
+    padding-top: 15px;
+    padding-right: 10px;
+    font-size: 14pt;
+    width: 100%;
+    text-align: right;
+    border-top: 1px solid black;
+}
+
+td.direita, th.direita {
+    text-align: right;
+    padding-right: 10px;
+}
+
+td.esquerda, th.esquerda {
+    text-align: left;
+}
+
+td.centro, th.centro {
+    text-align: center;
+}
+
+div.botao {
+    vertical-align: middle;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    display: block;
+    width: 200px;
+    text-align: center;
+}
+
+footer#rodape{
+    clear: both;
+    border-top: 1px solid black;
+}
+
+footer#rodape p{
+    text-align: center;
+    font-size: 11pt;
+    color: white;
+    background-color: green;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+.menu {
+    border: 1px green solid;
+    height: auto;
+    background-color: green;
+   /* margin: 5px;*/
+   /* padding: 5px;*/
+   /* text-align: left;*/
+   
+    text-align: center;
+    font-size: 12pt;
+    
+   /* font-size: 36pt;*/
+    font-weight: bold;
+    color: white;
+    /*vertical-align: middle;*/
+    list-style: none;
+   /* border: 1px solid black;*/
+    /*float: left;*/
+    width: auto;
+    
+    padding: 0px;
+}
+
+.menu li {
+    position: relative;
+    /*float: left;*/
+   /* border-right: 1px solid black;*/
+   display: inline-block;
+   background-color: green;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none; 
+    padding: 5px 10px; 
+    display: block;
+    margin: 0px;
+}
+
+.menu li a:hover {
+    /*background: white;*/
+    color: yellow;
+    -moz-box-shadow: 0 3px 10px 0 black;
+    /*-webkit-box-shadow: 0 3px 10px 0 black;*/
+    text-shadow: 0px 0px 5px black;
+}
+.menu li  ul {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    display: none;
+    padding: 0;
+}
+
+.menu li:hover ul, .menu li.over ul {
+    display: block;
+}
+
+.menu li ul li {
+   /* border: 1px solid black;*/
+    display: block;
+    width: 100%;
+    margin: 0;
+    left: 0;
+    background-color: transparent;
+}
+ p.uppercase{
+    text-transform: uppercase;
+}
+h1{
+text-align: center;
+}
+
+/*
+nav#menu {
+    background-color: black;
+    font-size: 11pt;
+    color: white;
+    vertical-align: middle;
+    margin: 5px;
+    padding: 5px;
+    height: auto;
+}
+
+nav#menu a:hover {
+    background-color: white;
+    text-decoration: underline;
+    color: black;
+}
+
+header#cabecalho {
+    border: 1px #606060 solid;
+    height: 100px;
+    background-color: green;
+    margin: 5px;
+    padding: 5px;
+    padding-top: 40px;
+    padding-bottom: -20px;
+    text-align: center;
+    font-size: 36pt;
+    font-weight: bold;
+    color: white;
+    vertical-align: middle;
+}
+
+*/
+
